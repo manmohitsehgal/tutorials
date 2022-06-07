@@ -1,0 +1,38 @@
+.common {
+  width: 100px;
+  height: 100px;
+}
+
+.cOne {
+  background: red;
+}
+.cTwo {
+  background: blue;
+}
+.cThree {
+  background: green;
+}
+.cFour {
+  background: yellow;
+}
+.cFive {
+  background: pink;
+}
+.cSix {
+  background: gold;
+}
+.cSeven {
+  background: skyblue;
+}
+.cEight {
+  background: lime;
+}
+.cNine {
+  background: silver;
+}
+.cTen {
+  background: teal;
+}
+.highlight {
+  background: orange;
+}
