@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    .common {
+      background: green;
+      border: 1px solid black;
+    }
+
+    .main {
+      width: 500px;
+      height: 500px;
+      border: 3px solid black;
+    }
+
+    .customWidth {
+      width: 60vw; /* 50% of the screen size. 1vw = 1% of the screen size */
+      background: lime;
+    }
+    .customHeight {
+      height: 50vh;
+      background: yellow;
+    }
+  </style>
+  <body>
+    <div class="main bg-danger">
+      <div class="customWidth">VW WIDTH</div>
+      <div class="customHeight">VW HEIGHT</div>
+    </div>
+  </body>
+</html>
