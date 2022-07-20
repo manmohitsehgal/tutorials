@@ -1,0 +1,16 @@
+const express = require("express");
+const path = require("path");
+const dbzData = require("./db.json");
+const app = express();
+
+app.use(express.static("public"));
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "index.html"));
+});
+
+app.get("/dbz", (req, res) => {
+  res.json(dbzData);
+});
+
+app.listen(3000);

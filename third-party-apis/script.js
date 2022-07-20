@@ -25,4 +25,10 @@ productsPromise
   .then(jsonData => {
     const productsArray = jsonData.products;
     console.log(productsArray);
+  })
+  .catch(error => {
+    console.log(typeof error);
+  })
+  .finally(() => {
+    console.log("this will always execute");
   });

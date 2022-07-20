@@ -1,0 +1,7 @@
+[
+  { "id": 1, "name": "Saitama", "heroClass": "Human" },
+  { "id": 2, "name": "Goku", "heroClass": "Saiyan" },
+  { "id": 1759, "username": "Jiraya", "heroClass": "Sanin" },
+  { "id": 5225, "username": "Mani", "heroClass": "Sehgal" },
+  { "id": 4251, "username": "Spiderman", "heroClass": "Avenger" }
+]
