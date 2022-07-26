@@ -3,13 +3,31 @@ const path = require("path");
 const fs = require("fs");
 const heros = require("./hero.json");
 const app = express();
+const mysql = require("mysql2");
 
 app.use(express.static("public"));
 app.use(express.json());
 
+const db = mysql.createConnection(
+  {
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: "inventory_db"
+  },
+  console.log(`Connected to the inventory_db database.`)
+);
+
+db.query("show databases", function(err, results) {
+  console.log(results);
+});
+
+db.query("SELECT * FROM books", function(err, results) {
+  console.log(results);
+});
+
 app.get("/", (req, res) => res.sendFile(path.join(__dirname, "/index.html")));
 
-//AIM: Get the api call to return a object given the id
 app.get("/api/getHero/:id", (req, res) => {
   // goes the logic to get the id
   if (req.body && req.params.id) {

@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS hero_db;
+CREATE DATABASE hero_db;
