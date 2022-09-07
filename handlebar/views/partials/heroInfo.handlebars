@@ -1,0 +1,17 @@
+<div style="font-size: 20px">
+    <p>{{name}}</p>
+    <p>{{bio}}</p>
+    <p>{{id}}</p>
+    <p>{{defense}}</p>
+    <p>{{attack}}</p>
+    <ul>
+        {{#each abilities}}
+        {{#if this.name}}
+        <li>{{this.name}}</li>
+        {{else}}
+        <li>{{this}}</li>
+        {{/if}}
+        {{/each}}
+    </ul>
+    <hr>
+</div>
