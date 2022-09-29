@@ -37,7 +37,6 @@
 const express = require("express");
 const exphbs = require("express-handlebars");
 const path = require("path");
-
 const hbs = exphbs.create({});
 
 // Sets up the Express App
@@ -54,5 +53,5 @@ app.use(require("./controllers/heros"));
 
 // Starts the server to begin listening
 app.listen(PORT, () => {
-  console.log(`Server listening on: http://localhost:${PORT}`);
+  console.log(`Server listening on: http://localhost:3001`);
 });
